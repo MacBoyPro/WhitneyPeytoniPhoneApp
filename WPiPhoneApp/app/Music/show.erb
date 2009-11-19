@@ -1,0 +1,29 @@
+<div class="toolbar">
+	<h1 id="pageTitle">
+		<%=@music.name%>
+	</h1>
+</div>
+
+<div class="panel" selected="true">
+
+<a class="button right_button" href="<%=url_for(:action => :edit, :id => @music.object)%>" target="_self">Edit</a>
+
+<table class="grid">
+  
+  <tr>
+	<td class="gridleft">Name</td>
+    <td class="gridright"><%=@music.name%></td>
+  </tr>
+  
+  <tr>
+	<td class="gridleft">Url</td>
+    <td class="gridright"><%=@music.url%></td>
+  </tr>
+  
+  <tr>
+	<td class="gridleft">Description</td>
+    <td class="gridright"><%=@music.description%></td>
+  </tr>
+  
+</table>
+</div>

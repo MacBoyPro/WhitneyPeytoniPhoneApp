@@ -1,0 +1,37 @@
+<div class="toolbar">
+	<h1 id="pageTitle">
+		Edit <%=@video.name%>
+	</h1>
+</div>
+
+<form title="Edit Video" 
+	  class="panel" 
+	  id="video_edit_form" 
+	  method="POST" 
+	  action="<%=url_for(:action => :update)%>" selected="true">
+	<fieldset>
+		<input type="hidden" name="id" value="<%=@video.object%>"/>
+		
+		  <div class="row">
+			  <label>Name: </label>
+			  <input type="text" name="video[name]" value="<%=@video.name%>"/>
+		  </div>
+		
+		  <div class="row">
+			  <label>Url: </label>
+			  <input type="text" name="video[url]" value="<%=@video.url%>"/>
+		  </div>
+		
+		  <div class="row">
+			  <label>Description: </label>
+			  <input type="text" name="video[description]" value="<%=@video.description%>"/>
+		  </div>
+		
+	</fieldset>
+	<input type="submit" value="Update"/>
+	<p align="center">
+		<a href="<%=url_for(:action => :delete, :id => @video.object)%>">
+			<font color="#990000">Delete</font>
+		</a>
+	</p>
+</form>

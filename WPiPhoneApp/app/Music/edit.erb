@@ -1,0 +1,37 @@
+<div class="toolbar">
+	<h1 id="pageTitle">
+		Edit <%=@music.name%>
+	</h1>
+</div>
+
+<form title="Edit Music" 
+	  class="panel" 
+	  id="music_edit_form" 
+	  method="POST" 
+	  action="<%=url_for(:action => :update)%>" selected="true">
+	<fieldset>
+		<input type="hidden" name="id" value="<%=@music.object%>"/>
+		
+		  <div class="row">
+			  <label>Name: </label>
+			  <input type="text" name="music[name]" value="<%=@music.name%>"/>
+		  </div>
+		
+		  <div class="row">
+			  <label>Url: </label>
+			  <input type="text" name="music[url]" value="<%=@music.url%>"/>
+		  </div>
+		
+		  <div class="row">
+			  <label>Description: </label>
+			  <input type="text" name="music[description]" value="<%=@music.description%>"/>
+		  </div>
+		
+	</fieldset>
+	<input type="submit" value="Update"/>
+	<p align="center">
+		<a href="<%=url_for(:action => :delete, :id => @music.object)%>">
+			<font color="#990000">Delete</font>
+		</a>
+	</p>
+</form>
