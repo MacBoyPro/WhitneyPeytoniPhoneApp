@@ -19,4 +19,4 @@ KeepTrackOfLastVisitedPage = 0
 LastVisitedPage = ''
 
 # Sync server url.  This must be the full path to your sources.  For example: http://rhomobile.rhohub.com/apps/SugarCRM/sources/
-syncserver = ''
+syncserver = 'http://whitneypeyton.rhohub.com/apps/WPiPhoneApp/sources'
