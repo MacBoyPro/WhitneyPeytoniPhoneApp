@@ -6,7 +6,7 @@
 # no regular words or you'll be exposed to dictionary attacks.
 ActionController::Base.session = {
   :key         => '_wpserver_session',
-  :secret      => '0780be3be2ac90233a2f24a1fd28a8033e21ddd7dc5b152150aa0bf3f088cf0c01d90d7c3658dea790ad33664511a1864b88345f8caa97223dc83e414e8e82ab'
+  :secret      => '24d69a3eae81b761fb3ada86eee52123e651ae83d57c25cdfa50287cb0afc4231a0091bb1d1282522f6d8f1db77a222ed8a642c456b0662001e0d0ea79c4935b'
 }
 
 # Use the database for sessions instead of the cookie-based default,
